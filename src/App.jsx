@@ -1,22 +1,25 @@
-import { Link, Route, Routes, useParams } from 'react-router-dom'
-import Header from './components/Header.jsx'
-import Home from './Moduls/Home/View/Home.jsx'
-import Shop from './Moduls/Shop/View/Shop.jsx'
-import ShopDetails from './Moduls/Shop/View/ShopDetails.jsx'
-function App() {
+import { Route, Routes } from "react-router-dom";
+import Header from "./components/Header";
+import Home from "./assets/Modules/Home/View/Home";
+import Shop from "./assets/Modules/Shop/View/Shop";
+import ShopDetails from "./assets/Modules/Shop/View/ShopDetails";
+import FAQ from "./assets/Modules/FAQ/View/FAQ";
+import SwiperCard from "./assets/Modules/Swiper/View/SwiperCard";
+const App = () => {
   return (
     <>
       <Header />
-      <div>
+      <main>
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/shop-slug/:id' element={<ShopDetails />} />
-          <Route path='/shop' element={<Shop />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/shop-details/:productId" element={<ShopDetails />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/swiper" element={<SwiperCard />} />
         </Routes>
-        {/* <Home /> */}
-      </div>
+      </main>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

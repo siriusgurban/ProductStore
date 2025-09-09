@@ -1,0 +1,15 @@
+@use "./base";
+// pages
+@use "./Pages/home";
+@use "./Pages/shop";
+@use "./Pages/shop-details";
+
+// components
+@use "./components/header";
+@use "./components/product-card";
+@use "./components/accordion";
+
+
+@import 'swiper/css';
+@import 'swiper/css/pagination';
+@import 'swiper/css/navigation';

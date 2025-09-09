@@ -1,0 +1,49 @@
+.shop {
+  width: 100%;
+
+  background-color: powderblue;
+  .container {
+    height: 100%;
+    .row {
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .showMore{
+        button{
+          width: 100px;
+          height: 50px;
+          border: 1px solid black;
+          border-radius: 10px;
+        }
+      }
+
+      .productBox {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        .productCard {
+          width: 220px;
+          height: 400px;
+          margin: 10px;
+          padding: 10px;
+          border: 1px solid black;
+          border-radius: 10px;
+          .image {
+            width: 200px;
+            height: 300px;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

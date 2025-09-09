@@ -1,0 +1,25 @@
+.accordion_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .accordion {
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    .accordion_title {
+      text-align: start;
+      font-size: 24px;
+      font-weight: 600;
+      color: #222222;
+      cursor: pointer;
+    }
+    .accordion_content {
+      font-size: 16px;
+      font-weight: 400;
+      color: #222222;
+      background-color: rgb(127, 191, 193);
+    }
+  }
+}
